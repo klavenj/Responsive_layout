@@ -1,0 +1,389 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Imports*/
+@import url(https://fonts.googleapis.com/css?family=Heebo:400,500,700,300,100);
+
+
+/*Global Styles*/
+
+*{
+	box-sizing:border-box;	
+	
+}
+
+body{
+	background:#e3e3e3;
+	font-family: 'Heebo', sans-serif;
+	
+	
+}
+
+
+/*Header*/
+.main-header
+{
+	padding-top: .6em;
+	padding-bottom: .6em;
+	background:#c9c9c9;
+	
+
+}
+
+.name
+{
+	font-size: 1.5em;
+	margin:0;
+}
+
+.name a
+{
+	color:#ffffff;
+}
+
+.nav
+{
+	margin-top: 5px;
+	
+	
+}
+
+
+
+
+/* Links */
+
+ .nav a, .main-footer a{
+	font-size: 1.1em;
+	color:#ffffff;
+}
+
+.nav a:hover, #top a:hover {
+	color:#89bdd3;
+	transition: all .5s;	
+}
+
+.name a, .nav a {
+	display: block;
+	text-align: center;
+	padding: 10px 15px;	
+}
+
+/*Banners*/
+
+.banner
+{
+	color:#FFF;
+	background: #c9c9c9; 
+	text-align: center;
+	padding: 2.5em 2.7em;
+	
+}
+
+img
+{
+	max-width:100%;
+	
+}
+
+.profile-picture
+{
+	width:250px;
+	
+}
+
+.banner p
+{
+	font-weight:200;
+	font-size: 1.125em;
+
+}
+
+
+
+
+/*Content*/
+
+.main-title
+{
+	text-align:center;
+	background:#fefefe;
+	padding: .25em;
+	
+}
+
+.main-title h2
+{
+	font-weight:500;	
+	color:#111111;	
+	
+}
+
+.first, .second, .third, .fourth, .fifth, .sixth
+{
+	background:#fefefe;
+	text-align:center;
+	padding: 1.5em;
+	
+}
+
+.work-sample
+{
+	width:270px;
+	padding: 1.75em 0;
+	
+}
+
+.title
+{
+	font-weight: 300;	
+	
+}
+
+p {
+	font-weight:200;
+	font-size: 1em;
+	margin-bottom: 2em;
+	
+}
+
+/*Lower Banner*/
+
+.lower-banner
+{
+	color:#FFF;
+	background: #c9c9c9; 
+	text-align: center;
+	padding: 2.5em 2.7em;
+	
+}
+
+.lower-banner h2
+{
+	font-weight:500;
+}
+
+b{
+	font-weight:500;	
+		
+}
+
+
+/*Footer*/
+
+.main-footer, .main-footer h3{
+	display:inline-block;	
+	
+}
+
+.main-footer h3, .main-footer .nav	{
+	font-weight: 500;
+	color:#fff;
+	font-size: .75em;
+	
+}
+
+.main-footer {
+	background:#999;
+	width: 100%;
+	padding: 2em 0;
+	margin-bottom: -20px;
+	border-top: solid #666;
+	border-width: .8px;
+}
+
+#sname
+{
+	float:left;	
+	padding: 10px 15px;	
+}
+
+#top{
+	float:right;
+	padding: 10px 15px;	
+}
+
+.main-footer .nav {
+	display:none;	
+	
+}
+
+
+.skill-section
+{
+	background:#c9c9c9;
+	
+	
+}
+
+.card li {
+	
+	line-height: 1.9em;	
+	font-weight:200;
+	border: 1px solid rgba(20,20,20,.5);
+	border-radius:5px;
+	margin:5px;
+	background: #999;
+	
+}
+
+
+
+
+
+
+
+
+
+/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+	
+	/* ================================= 
+  Media Queries
+	==================================== */
+
+	@media (min-width: 768px){
+		
+		
+		/*Header*/
+		
+		.container{
+			width: 90%;
+			margin: 0 auto;
+		}
+		
+		.nav{
+			text-align:center;	
+		}
+		
+		.nav li, .main-footer .nav{
+			display: inline-block;
+			
+		}
+	
+		/*Banner*/
+		.section
+		{	width:50%;
+			float:left;
+			padding: 2em;	
+		}
+		
+		.first, .second, .third .fourth, .fifth, .sixth{ 
+			width:100%;	
+		}
+		
+		/*footer*/
+		
+		#top{
+			display:none;	
+		}
+		
+		
+		
+		#sname, .main-footer .nav{
+				padding: 10px 25px;
+		}
+		
+		.main-footer .nav{
+			float:right;
+		}
+		
+		.main-title{
+			padding-top: 2.5em;	
+			
+		}
+		
+		.card{
+			width: 100%;
+		
+				
+			
+		}
+		
+		.section:hover
+		{
+	
+			box-shadow: 1px 1px 20px #89bdd3;
+			transition:all .5s;
+			transform: scale(1.05);
+	
+		}
+		
+		.card li:hover{
+				background:	#89bdd3;
+				transition: all .5s;
+				transform: scale(1.06);	
+				box-shadow: 1px 1px 20px 1px #999;
+				font-weight:500;
+			}
+					
+		
+	}
+	
+	
+	@media (min-width: 1024px)
+	{
+		.container{
+			width:80%;
+			
+		}
+		
+		.first, .second, .third, .fourth, .fifth, .sixth{ 
+			float: left;
+			width:calc(100%/3);
+			min-height: 1000px;
+			
+		}
+		
+		
+		
+		
+		
+		.main-title{
+			padding-top: 2.5em;	
+			
+		}
+		
+		.section {
+			width:100%;
+			min-height:500px;
+			
+			
+		}
+		
+		.name{
+			
+			float:left;	
+			
+		}
+		
+		.nav{
+			
+			float:right;	
+		}
+		
+		.banner img
+		{
+			float: right;	
+			width:35%;
+			padding: 2em;
+			
+		}
+
+		.banner p {
+			float:left;	
+			width:65%;
+			text-align: left;
+			padding: 2em;
+		}
+		
+		
+
+	}
+
+
